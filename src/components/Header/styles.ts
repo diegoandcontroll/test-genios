@@ -16,6 +16,7 @@ export const Nav = styled.div`
 `;
 export const Banner = styled.img`
   width: 1350px;
+  height: 630px;
   @media (max-width: 768px) {
     display: none;
   }

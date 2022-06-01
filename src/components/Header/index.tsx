@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { FaUser, FaUserAlt } from 'react-icons/fa';
 import { Nav, Logo, Hamburger, MenuLink, Menu, Banner } from './styles';
-
+import { Link } from 'react-router-dom';
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -19,7 +19,7 @@ export function Header() {
           </Logo>
           <MenuLink href="#">Home</MenuLink>
           <MenuLink href="#">Sobre</MenuLink>
-          <MenuLink href="#">Tabela</MenuLink>
+          <Link to="/table">Tabela</Link>
           <MenuLink href="#">Fale conosco</MenuLink>
           <MenuLink href="#">
             Entrar <FaUserAlt color={isOpen ? '#1D2527' : '#fff'} />

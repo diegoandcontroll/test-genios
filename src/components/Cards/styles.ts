@@ -12,6 +12,9 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const ContainerImage = styled.div`

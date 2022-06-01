@@ -11,6 +11,7 @@ export const Container = styled.div<ContainerProps>`
   background-size: cover;
   background-position: center;
   display: flex;
+
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
@@ -20,6 +21,7 @@ export const Container = styled.div<ContainerProps>`
     font-size: 56px;
     line-height: 84px;
     color: #ffffff;
+    filter: blur(0);
   }
   button {
     width: 240px;
@@ -40,13 +42,14 @@ export const Container = styled.div<ContainerProps>`
     font-size: 20px;
     text-align: right;
     color: #ffffff;
+    filter: blur(none);
   }
   .container__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-basis: 58%;
+    flex-basis: 52%;
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 7rem;
   }
 `;

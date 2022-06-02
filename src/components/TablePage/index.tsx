@@ -1,9 +1,3 @@
-/* eslint-disable react/jsx-no-bind */
-/* eslint-disable prettier/prettier */
-/* eslint-disable react/button-has-type */
-/* eslint-disable react/jsx-one-expression-per-line */
-/* eslint-disable no-undef */
-/* eslint-disable react/jsx-no-useless-fragment */
 import { useState } from 'react';
 import { GlobalStyle } from '../../styles/global';
 import { NewModal } from '../NewModal';

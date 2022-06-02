@@ -23,6 +23,21 @@
     "react/react-in-jsx-scope": "off",
     "object-curly-newline": "off",
     "jsx-a11y/alt-text": "off",
-    " react/jsx-one-expression-per-line": "off"
+    "react/jsx-one-expression-per-line": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "eslint-disable arrow-parens": "off",
+    "react/jsx-no-bind": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "import/order": "off",
+    "arrow-parens": "off",
+    "react/no-unescaped-entities": "off",
+    "jsx-a11y/control-has-associated-label": "off",
+    "react/button-has-type": "off",
+    "react/jsx-no-useless-fragment": "off",
+    "no-confusing-arrow": "off",
+    "implicit-arrow-linebreak": "off",
+    "comma-dangle": "off"
   }
 }

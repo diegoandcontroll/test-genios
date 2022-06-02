@@ -73,4 +73,12 @@ export const GlobalStyle = createGlobalStyle`
       filter: brightness(0.8);
     }
   }
+  .banner{
+    width: 1350px;
+    height: 630px;
+    @media (max-width: 768px) {
+    width: 395px;
+    height: 345.67px;
+  }
+  }
 `;

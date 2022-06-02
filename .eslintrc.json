@@ -38,6 +38,7 @@
     "react/jsx-no-useless-fragment": "off",
     "no-confusing-arrow": "off",
     "implicit-arrow-linebreak": "off",
-    "comma-dangle": "off"
+    "comma-dangle": "off",
+    "jsx-a11y/anchor-is-valid": "off"
   }
 }

@@ -1,8 +1,8 @@
-/* eslint-disable */
 import { useState } from 'react';
-import { FaUser, FaUserAlt } from 'react-icons/fa';
-import { Nav, Logo, Hamburger, MenuLink, Menu, Banner } from './styles';
+import { FaUserAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { Nav, Logo, Hamburger, MenuLink, Menu, Banner } from './styles';
+
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (

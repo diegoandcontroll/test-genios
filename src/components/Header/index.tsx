@@ -1,32 +1,44 @@
-import { useState } from 'react';
-import { FaUserAlt } from 'react-icons/fa';
+/* eslint-disable react/require-default-props */
+/* eslint-disable react/no-unused-prop-types */
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-empty-pattern */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link } from 'react-router-dom';
-import { Nav, Logo, Hamburger, MenuLink, Menu, Banner } from './styles';
+import { Container } from './styles';
+import { RiMenu3Fill } from 'react-icons/ri';
 
-export function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+interface HeaderProps {
+  setMenuIsVisible: ({}: boolean) => void;
+  bg: string;
+}
+export function Header({ setMenuIsVisible, bg }: HeaderProps) {
+  const backgroung = bg;
   return (
     <>
-      <Nav>
-        <Hamburger onClick={() => setIsOpen(!isOpen)}>
-          <span />
-          <span />
-          <span />
-        </Hamburger>
-        <Menu isOpen={isOpen}>
-          <Logo>
-            <img src="/assets/logo.svg" width="49" height="49" />
-          </Logo>
-          <MenuLink href="#">Home</MenuLink>
-          <MenuLink href="#">Sobre</MenuLink>
-          <Link to="/table">Tabela</Link>
-          <MenuLink href="#">Fale conosco</MenuLink>
-          <MenuLink href="#">
-            Entrar <FaUserAlt color={isOpen ? '#1D2527' : '#fff'} />
-          </MenuLink>
-        </Menu>
-      </Nav>
-      <Banner src="/assets/banner.png" />
+      <Container bgContainer={backgroung}>
+        <section>
+          <Link to="/" className="logo">
+            <img src="/assets/logo.svg" alt="Logo" width={49} height={49} />
+          </Link>
+
+          <nav>
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <Link to="/table">Tabela</Link>
+            <a href="#">Fale conosco</a>
+            <a href="#">Entrar</a>
+          </nav>
+        </section>
+        <section>
+          <RiMenu3Fill
+            className="mobile"
+            color="#ffffff"
+            width={85}
+            height={85}
+            onClick={() => setMenuIsVisible(true)}
+          />
+        </section>
+      </Container>
     </>
   );
 }

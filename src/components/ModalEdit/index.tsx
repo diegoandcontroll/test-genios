@@ -9,23 +9,15 @@ interface ModalProps {
   onRequestClose: () => void;
 }
 
-export function NewModal({ isOpen, onRequestClose }: ModalProps) {
+export function ModalEdit({ isOpen, onRequestClose }: ModalProps) {
   const [name, setName] = useState('');
   const [age, setAge] = useState('');
   const [vlMax, setVlMax] = useState('');
   const [noteEco, setNoteEco] = useState('');
   const [noteUser, setNoteUser] = useState('');
   const [link, setLink] = useState('');
-  const { createCars } = useCars();
-  async function handleCreateNewCars(event: FormEvent) {
+  function handleCreateNewCars(event: FormEvent) {
     event.preventDefault();
-    await createCars({
-      name,
-      age,
-      vlMax,
-      noteEco,
-      noteUser,
-    });
     setName('');
     setAge('');
     setVlMax('');
@@ -50,7 +42,7 @@ export function NewModal({ isOpen, onRequestClose }: ModalProps) {
         />
       </button>
       <Container onSubmit={handleCreateNewCars}>
-        <h2>Adicionar Novo</h2>
+        <h2>Editar</h2>
         <ContainerInputs>
           <div>
             <img src="/assets/upload.png" alt="" />

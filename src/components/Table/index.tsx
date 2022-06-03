@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FaPencilAlt, FaTrashAlt } from 'react-icons/fa';
 import { useCars } from '../../hooks/useCars';
+import { ModalEdit } from '../ModalEdit';
 import { NewModal } from '../NewModal';
 import { Container } from './styles';
 
@@ -45,7 +46,7 @@ export function Table() {
           </tbody>
         </table>
       </Container>
-      <NewModal isOpen={modal} onRequestClose={toggleModal} />
+      <ModalEdit isOpen={modal} onRequestClose={toggleModal} />
     </>
   );
 }

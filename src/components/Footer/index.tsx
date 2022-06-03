@@ -4,8 +4,6 @@ import { Container } from './styles';
 export function Footer() {
   return (
     <Container bg="/assets/footer.png">
-      <div style={{ padding: '13rem' }} />
-      <div />
       <div className="container__content">
         <h2>Mustang</h2>
         <p>
@@ -15,7 +13,10 @@ export function Footer() {
           grandes alterações ao longo dos anos é a mais antiga linha de
           automóveis da Ford.
         </p>
-        <button type="button">Ver Carro</button>
+
+        <div>
+          <button type="button">Ver Carro</button>
+        </div>
       </div>
     </Container>
   );

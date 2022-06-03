@@ -1,11 +1,22 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
+import { useEffect, useState } from 'react';
 import { Container } from './styles';
 
 export function Footer() {
+  const [mobile, setMobile] = useState(false);
+  const widthWidowValue = window.innerWidth;
+
   return (
     <Container bg="/assets/footer.png">
       <div className="container__content">
-        <h2>Mustang</h2>
+        <h2 className="title_desktop">Mustang</h2>
+        <h2 className="title_mobile">O que são</h2>
+        <p className="paragraph_mobile">
+          A sigla SUV significa Sport Utility Vehicle -- ou seja, veículo
+          utilitário esportivo. As SUVs costumam ter porte avantajado, além de
+          interior espaçoso e possibilidade de trafegar dentro e fora da cidade.
+        </p>
         <p>
           O Ford Mustang é um automóvel desportivo produzido pela Ford Motor
           Company. O carro foi apresentado ao público em 17 de abril de 1964
@@ -15,7 +26,7 @@ export function Footer() {
         </p>
 
         <div>
-          <button type="button">Ver Carro</button>
+          <button type="button">Ver Carros</button>
         </div>
       </div>
     </Container>

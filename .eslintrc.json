@@ -39,6 +39,10 @@
     "no-confusing-arrow": "off",
     "implicit-arrow-linebreak": "off",
     "comma-dangle": "off",
-    "jsx-a11y/anchor-is-valid": "off"
+    "jsx-a11y/anchor-is-valid": "off",
+    "operator-linebreak": "off",
+    "no-empty-pattern": "off",
+    "react/jsx-no-constructed-context-values": "off",
+    "no-shadow": "off"
   }
 }

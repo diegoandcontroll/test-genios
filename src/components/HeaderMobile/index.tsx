@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-empty-pattern */
 import { IoClose } from 'react-icons/io5';
 import { Container } from './styles';
 

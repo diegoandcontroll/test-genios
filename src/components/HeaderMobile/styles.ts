@@ -1,4 +1,3 @@
-/* eslint-disable operator-linebreak */
 import styled, { css } from 'styled-components';
 
 interface ContainerProps {

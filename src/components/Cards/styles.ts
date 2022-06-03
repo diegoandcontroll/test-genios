@@ -5,40 +5,44 @@ interface ContainerImageProps {
 }
 export const Container = styled.div`
   width: 100%;
-  height: 68vh;
-  background-color: transparent;
   display: flex;
-  align-items: center;
+  padding-bottom: 4rem;
   justify-content: space-around;
+  align-items: center;
   @media (max-width: 768px) {
-    display: none;
+    flex-direction: column;
   }
 `;
 
 export const ContainerImage = styled.div`
-  margin-left: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @media (max-width: 768px) {
+    margin-top: 2rem;
+  }
 `;
 
 export const ContainerCard = styled.div<ContainerImageProps>`
-  width: 280px;
-  height: 240px;
-  border-radius: 8px;
-  padding: 1rem 1rem;
-  margin-top: ${({ imageAdjust }) =>
-    imageAdjust === '/assets/car3.png' ? '-1.3rem' : '-1rem'};
-  margin-top: ${({ imageAdjust }) =>
-    imageAdjust === '/assets/car2.png' ? '-0.25rem' : '-1rem'};
+  width: 275px;
+  height: 320px;
+  padding: 0 1rem;
+  border-radius: 20px;
+  margin-top: -2rem;
   border: 1px solid var(--primary);
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
   h2 {
-    margin-top: 1rem;
+    margin-top: 2rem;
     text-align: center;
   }
   button {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
-    margin-left: 1rem;
     width: 200px;
     height: 30px;
     border: 1px solid var(--primary);
@@ -49,8 +53,16 @@ export const ContainerCard = styled.div<ContainerImageProps>`
       line-height: 32px;
     }
   }
+  .button {
+    display: flex;
+    justify-content: center;
+  }
   .icons {
-    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
     span {
       padding-left: 10px;
       font-size: 16px;

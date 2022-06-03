@@ -22,11 +22,16 @@ export function Header({ setMenuIsVisible, bg }: HeaderProps) {
           </Link>
 
           <nav>
-            <a href="#">Home</a>
+            <Link to="/">Home</Link>
             <a href="#">Sobre</a>
             <Link to="/table">Tabela</Link>
             <a href="#">Fale conosco</a>
-            <a href="#">Entrar</a>
+            <a href="#" className="sign">
+              <span>
+                Entrar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="/assets/user.svg" alt="" width={20} height={20} />
+              </span>
+            </a>
           </nav>
         </section>
         <section>

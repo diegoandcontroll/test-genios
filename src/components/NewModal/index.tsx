@@ -1,9 +1,3 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable arrow-parens */
-/* eslint-disable react/jsx-no-bind */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import { FormEvent, useState } from 'react';
 import Modal from 'react-modal';
 import { useCars } from '../../hooks/useCars';

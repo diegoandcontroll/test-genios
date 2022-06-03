@@ -1,5 +1,3 @@
-/* eslint-disable indent */
-/* eslint-disable operator-linebreak */
 import styled, { css } from 'styled-components';
 
 interface ContainerProps {
@@ -23,8 +21,7 @@ export const Container = styled.header<ContainerProps>`
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        width: 100vw;
-        height: 100vw;
+        overflow-x: hidden;
       }
     `}
   svg {
@@ -45,7 +42,6 @@ export const Container = styled.header<ContainerProps>`
         @media (max-width: 768px) {
           margin-bottom: 22rem;
         }
-
         gap: 8rem;
       `}
     &:last-child {
@@ -67,6 +63,7 @@ export const Container = styled.header<ContainerProps>`
         font-size: 20px;
         position: relative;
         color: var(--white);
+
         &:first-child {
           margin-left: 5rem;
         }
@@ -85,6 +82,17 @@ export const Container = styled.header<ContainerProps>`
             width: 100%;
           }
         }
+      }
+    }
+    .sign {
+      display: flex;
+      flex: row;
+      justify-content: center;
+      align-items: center;
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
     .mobile {

@@ -1,12 +1,6 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/no-unescaped-entities */
-import { useEffect, useState } from 'react';
 import { Container } from './styles';
 
 export function Footer() {
-  const [mobile, setMobile] = useState(false);
-  const widthWidowValue = window.innerWidth;
-
   return (
     <Container bg="/assets/footer.png">
       <div className="container__content">

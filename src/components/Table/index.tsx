@@ -6,7 +6,6 @@ import { Container } from './styles';
 
 export function Table() {
   const { cars } = useCars();
-  console.log(cars);
   return (
     <Container>
       <table>

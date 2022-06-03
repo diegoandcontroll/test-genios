@@ -43,6 +43,8 @@
     "operator-linebreak": "off",
     "no-empty-pattern": "off",
     "react/jsx-no-constructed-context-values": "off",
-    "no-shadow": "off"
+    "no-shadow": "off",
+    "no-unused-vars": "off",
+    "indent": "off"
   }
 }

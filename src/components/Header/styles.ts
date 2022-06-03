@@ -6,7 +6,6 @@ interface ContainerProps {
   bgContainer: string;
 }
 export const Container = styled.header<ContainerProps>`
-  width: 100%;
   background: ${({ bgContainer }) => (bgContainer ? 'transparent' : '#1D2527')};
   padding: 14.5px 64px;
   display: flex;
@@ -17,9 +16,24 @@ export const Container = styled.header<ContainerProps>`
     css`
       background-image: url('/assets/banner.png');
       background-position: center;
-      background-size: cover;
       background-repeat: no-repeat;
+      background-size: cover;
+      @media (max-width: 768px) {
+        background-image: url('/assets/bannerM.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vw;
+      }
     `}
+  svg {
+    width: 38px;
+    height: 38px;
+    @media (max-width: 768px) {
+      margin-right: 25rem;
+    }
+  }
   > section {
     display: flex;
     gap: 16rem;
@@ -28,7 +42,11 @@ export const Container = styled.header<ContainerProps>`
       bgContainer.length > 0 &&
       css`
         margin-bottom: 50rem;
-        gap: 16rem;
+        @media (max-width: 768px) {
+          margin-bottom: 22rem;
+        }
+
+        gap: 8rem;
       `}
     &:last-child {
       gap: 1rem;

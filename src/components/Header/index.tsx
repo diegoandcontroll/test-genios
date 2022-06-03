@@ -32,9 +32,7 @@ export function Header({ setMenuIsVisible, bg }: HeaderProps) {
         <section>
           <RiMenu3Fill
             className="mobile"
-            color="#ffffff"
-            width={85}
-            height={85}
+            color="#fff"
             onClick={() => setMenuIsVisible(true)}
           />
         </section>

@@ -6,6 +6,7 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import { FormEvent, useState } from 'react';
 import Modal from 'react-modal';
+import { useCars } from '../../hooks/useCars';
 import { Container, ContainerInputs } from './styles';
 
 Modal.setAppElement('#root');
@@ -17,16 +18,23 @@ interface TransActionModalProps {
 export function NewModal({ isOpen, onRequestClose }: TransActionModalProps) {
   const [name, setName] = useState('');
   const [age, setAge] = useState('');
-  const [vlMaxKm, setVlMaxKm] = useState('');
+  const [vlMax, setVlMax] = useState('');
   const [noteEco, setNoteEco] = useState('');
   const [noteUser, setNoteUser] = useState('');
   const [link, setLink] = useState('');
-
-  async function handleCreateNewTransaction(event: FormEvent) {
+  const { createCars } = useCars();
+  async function handleCreateNewCars(event: FormEvent) {
     event.preventDefault();
+    await createCars({
+      name,
+      age,
+      vlMax,
+      noteEco,
+      noteUser,
+    });
     setName('');
     setAge('');
-    setVlMaxKm('');
+    setVlMax('');
     setNoteEco('');
     setNoteUser('');
     setLink('');
@@ -47,7 +55,7 @@ export function NewModal({ isOpen, onRequestClose }: TransActionModalProps) {
           className="react-modal-close"
         />
       </button>
-      <Container onSubmit={handleCreateNewTransaction}>
+      <Container onSubmit={handleCreateNewCars}>
         <h2>Adicionar Novo</h2>
         <ContainerInputs>
           <div>
@@ -73,8 +81,8 @@ export function NewModal({ isOpen, onRequestClose }: TransActionModalProps) {
             <input
               type="text"
               placeholder="Lorem impsum"
-              value={vlMaxKm}
-              onChange={event => setVlMaxKm(event.target.value)}
+              value={vlMax}
+              onChange={event => setVlMax(event.target.value)}
             />
             <label htmlFor="">Nota economia</label>
             <input

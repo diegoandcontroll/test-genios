@@ -1,8 +1,12 @@
+/* eslint-disable operator-linebreak */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import { FaPencilAlt, FaTrashAlt } from 'react-icons/fa';
+import { useCars } from '../../hooks/useCars';
 import { Container } from './styles';
 
 export function Table() {
+  const { cars } = useCars();
+  console.log(cars);
   return (
     <Container>
       <table>
@@ -18,47 +22,22 @@ export function Table() {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Nome</td>
-            <td>Ano</td>
-            <td>Velocidade máx Km/h</td>
-            <td>Nota Economia</td>
-            <td>Nota usuários</td>
-            <td>
-              <FaTrashAlt />
-            </td>
-            <td>
-              <FaPencilAlt />
-            </td>
-          </tr>
-
-          <tr>
-            <td>Nome</td>
-            <td>Ano</td>
-            <td>Velocidade máx Km/h</td>
-            <td>Nota Economia</td>
-            <td>Nota usuários</td>
-            <td>
-              <FaTrashAlt />
-            </td>
-            <td>
-              <FaPencilAlt />
-            </td>
-          </tr>
-
-          <tr>
-            <td>Nome</td>
-            <td>Ano</td>
-            <td>Velocidade máx Km/h</td>
-            <td>Nota Economia</td>
-            <td>Nota usuários</td>
-            <td>
-              <FaTrashAlt />
-            </td>
-            <td>
-              <FaPencilAlt />
-            </td>
-          </tr>
+          {cars &&
+            cars.map(car => (
+              <tr key={car.id}>
+                <td>{car.name}</td>
+                <td>{car.age}</td>
+                <td>{car.vlMax}</td>
+                <td>{car.noteEco}</td>
+                <td>{car.noteUser}</td>
+                <td>
+                  <FaTrashAlt />
+                </td>
+                <td>
+                  <FaPencilAlt />
+                </td>
+              </tr>
+            ))}
         </tbody>
       </table>
     </Container>

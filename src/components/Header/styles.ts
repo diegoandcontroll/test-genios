@@ -36,7 +36,7 @@ export const Container = styled.header<ContainerProps>`
   }
   > section {
     display: flex;
-    gap: 16rem;
+    gap: 8rem;
     max-height: 96px;
     ${({ bgContainer }) =>
       bgContainer.length > 0 &&

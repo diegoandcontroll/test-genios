@@ -8,7 +8,7 @@ export const Container = styled.div`
     border-spacing: 0 0.5rem;
     thead {
       background-color: var(--primary);
-      border: 1px solid #1d2527;
+      border-radius: 6px !important;
     }
     th {
       color: var(--white);

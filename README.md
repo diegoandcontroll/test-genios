@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
-
+### `npm install or yarn`
 ### `npm start or yarn start`
 
 Runs the app in the development mode.\
@@ -15,7 +15,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Projeto desenvolvido para o teste front-end CyberGênios
 
-Lista de recursos usados em aula para este projeto
+Lista de recursos usados para o projeto
 
 | Recurso | Link |
 | ------ | ------ |

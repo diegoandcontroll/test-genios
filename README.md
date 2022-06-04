@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 ### `npm install or yarn`
-### `add [http://localhost:3000/api](http://localhost:3000/api) in /src/service/api.ts`
+### `add http://localhost:3000/api in /src/service/api.ts`
 ### `npm start or yarn start`
 
 Runs the app in the development mode.\

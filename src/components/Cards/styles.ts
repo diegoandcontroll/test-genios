@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 interface ContainerImageProps {
-  imageAdjust: string;
+  imageAdjust?: string;
 }
 export const Container = styled.div`
   width: 100%;
@@ -18,6 +18,10 @@ export const ContainerImage = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  img {
+    width: 240px;
+    height: 120px;
+  }
   @media (max-width: 768px) {
     margin-top: 2rem;
   }

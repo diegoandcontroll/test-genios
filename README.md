@@ -9,16 +9,19 @@ In the project directory, you can run:
 ### `add http://localhost:3000/api in /src/service/api.ts`
 ### `npm start or yarn start`
 
+## Run with docker
+### `docker --tag react .`
+### `docker run --publish 3000:3000 react`
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-# Projeto Test front-end CyberGênios
+# CyberGenius front-end test project
 
-Projeto desenvolvido para o teste front-end CyberGênios
+Project developed for the CyberGenios front-end test
 
-Lista de recursos usados para o projeto
+List of resources used for the project
 
-| Recurso | Link |
+| Resources | Links |
 | ------ | ------ |
 | Axios | https://axios-http.com/ |
 | MirageJS | https://miragejs.com/ |
@@ -27,3 +30,4 @@ Lista de recursos usados para o projeto
 | React-icons | https://react-icons.github.io/react-icons/ |
 | React-router-dom | https://www.npmjs.com/package/react-router-dom |
 | Context-api | https://pt-br.reactjs.org/docs/context.html |
+| React-elastic-carousel | https://www.npmjs.com/package/react-elastic-carousel |

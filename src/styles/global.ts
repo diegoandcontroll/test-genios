@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+  
   }
   html {
     @media (max-width: 1080px) {
@@ -24,6 +25,9 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background: var(--white);
     -webkit-font-smoothing: antialiased;
+    @media (max-width: 720px) {
+      font-size: 87.5%;
+    }
   }
   body, input, textarea, button {
     font-family: "Montserrat", sans-serif;
@@ -55,12 +59,15 @@ export const GlobalStyle = createGlobalStyle`
   }
   .react-modal-content {
     width: 100%;
-    max-width: 684px;
     max-height: 700px;
     background: var(--white);
     padding: 3rem;
     position: relative;
     border-radius: 0.25rem;
+    @media (max-width: 768px) {
+      width: 380px;
+      height: 568px;
+    }
   }
   .react-modal-close {
     position: absolute;

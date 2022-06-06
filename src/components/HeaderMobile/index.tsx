@@ -1,4 +1,5 @@
 import { IoClose } from 'react-icons/io5';
+import { Link } from 'react-router-dom';
 import { Container } from './styles';
 
 interface HeaderMobileProps {
@@ -14,12 +15,15 @@ export function HeaderMobile({
       <IoClose
         size={45}
         onClick={() => setMenuIsVisible(false)}
-        color="#ffffff"
+        color="#1D2527"
       />
       <nav>
-        <a href="#">Home</a>
+        <a href="#">
+          <img src="/assets/logo2.svg" alt="Logo" width={49} height={49} />
+        </a>
+        <Link to="/">Home</Link>
         <a href="#">Sobre</a>
-        <a href="#">Tabela</a>
+        <Link to="/table">Tabela</Link>
         <a href="#">Fale conosco</a>
         <a href="#">Entrar</a>
       </nav>

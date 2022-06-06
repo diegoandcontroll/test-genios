@@ -34,6 +34,10 @@ export const Container = styled.div<ContainerProps>`
     );
 
     @media (max-width: 768px) {
+      @media (width: 360px) {
+        margin-bottom: 16.5rem;
+        height: 104vw;
+      }
       flex-basis: 100%;
       justify-content: flex-start;
       align-items: flex-end;
@@ -63,12 +67,27 @@ export const Container = styled.div<ContainerProps>`
         filter: brightness(0.8);
       }
       @media (max-width: 768px) {
+        @media (width: 414px) {
+          margin-top: 3.8rem;
+        }
+        @media (width: 390px) {
+          margin-top: 2.3rem;
+        }
+        @media (width: 393px) {
+          margin-top: 2.5rem;
+        }
+        @media (width: 360px) {
+          margin-top: 1.8rem;
+        }
+        @media (width: 412px) {
+          margin-top: 3.6rem;
+        }
         margin-right: 3rem;
         width: 193px;
         height: 40px;
         border: 0.627523px solid #ffffff;
         border-radius: 2.51009px;
-        margin-top: 3.3rem;
+        margin-top: 1.3rem;
       }
     }
 

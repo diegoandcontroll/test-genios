@@ -16,6 +16,18 @@ export const ContainerInputs = styled.div`
   flex-direction: row;
   justify-content: space-around;
   gap: 5rem;
+  @media (max-width: 768px) {
+    img {
+      display: none;
+    }
+    span {
+      display: none;
+    }
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+  }
 
   span {
     font-size: 16px;
@@ -37,6 +49,9 @@ export const ContainerInputs = styled.div`
     transition: filter 0.2s;
     font-weight: 500;
     line-height: 32px;
+    @media (max-width: 768px) {
+      margin-left: 4.5rem;
+    }
     &:hover {
       filter: brightness(0.9);
     }

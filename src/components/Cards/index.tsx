@@ -1,6 +1,7 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import { Container, ContainerCard, ContainerImage } from './styles';
-import Carousel from 'react-elastic-carousel';
 import { useCars } from '../../hooks/useCars';
+import { Carousel } from '../Carousel';
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -8,6 +9,7 @@ const breakPoints = [
   { width: 768, itemsToShow: 1 },
   { width: 1200, itemsToShow: 3 },
 ];
+
 export function Cards() {
   const { cars } = useCars();
   return (

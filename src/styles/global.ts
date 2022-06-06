@@ -75,10 +75,17 @@ export const GlobalStyle = createGlobalStyle`
     box-shadow: none!important;
     color: var(--primary)!important;
   }
-  .fpZDAb{
+  .jGlQPw:hover:enabled, .fpZDAb:focus:enabled{
+    background: transparent !important;
+    box-shadow: none!important;
+    color: var(--primary)!important;
+  }
+  .fpZDAb,
+  .jGlQPw{
     box-shadow: none!important;
   }
-  .bcPFoY{
+  .bcPFoY,
+  .eifAwN{
     color: var(--primary)!important;
     background-color: var(--primary)!important;
     box-shadow: 0 0 1px 3px var(--primary)!important;

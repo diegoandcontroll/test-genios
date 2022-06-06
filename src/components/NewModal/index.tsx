@@ -25,6 +25,7 @@ export function NewModal({ isOpen, onRequestClose }: ModalProps) {
       vlMax,
       noteEco,
       noteUser,
+      image: link,
     });
     setName('');
     setAge('');
@@ -34,6 +35,7 @@ export function NewModal({ isOpen, onRequestClose }: ModalProps) {
     setLink('');
     onRequestClose();
   }
+
   return (
     <Modal
       isOpen={isOpen}

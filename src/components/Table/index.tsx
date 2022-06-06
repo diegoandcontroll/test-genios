@@ -1,16 +1,16 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaPencilAlt, FaTrashAlt } from 'react-icons/fa';
 import { useCars } from '../../hooks/useCars';
 import { ModalEdit } from '../ModalEdit';
-import { NewModal } from '../NewModal';
 import { Container } from './styles';
 
 export function Table() {
   const [modal, setModal] = useState(false);
+  const { cars } = useCars();
   function toggleModal() {
     setModal(!modal);
   }
-  const { cars } = useCars();
+
   return (
     <>
       <Container>

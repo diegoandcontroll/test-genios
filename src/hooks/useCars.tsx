@@ -14,6 +14,7 @@ interface Car {
   vlMax: string;
   noteEco: string;
   noteUser: string;
+  image?: string;
 }
 
 type CarsInput = Omit<Car, 'id'>;

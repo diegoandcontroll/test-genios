@@ -59,6 +59,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   .react-modal-content {
     width: 100%;
+    max-width: 680px;
     max-height: 700px;
     background: var(--white);
     padding: 3rem;
@@ -69,6 +70,20 @@ export const GlobalStyle = createGlobalStyle`
       height: 568px;
     }
   }
+  .fpZDAb:hover:enabled, .fpZDAb:focus:enabled{
+    background: transparent !important;
+    box-shadow: none!important;
+    color: var(--primary)!important;
+  }
+  .fpZDAb{
+    box-shadow: none!important;
+  }
+  .bcPFoY{
+    color: var(--primary)!important;
+    background-color: var(--primary)!important;
+    box-shadow: 0 0 1px 3px var(--primary)!important;
+  }
+  
   .react-modal-close {
     position: absolute;
     right: 1.5rem;

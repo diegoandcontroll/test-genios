@@ -28,13 +28,16 @@ export const Container = styled.header<ContainerProps>`
     width: 38px;
     height: 38px;
     @media (max-width: 768px) {
-      margin-right: 25rem;
+      margin-right: 22rem;
     }
   }
   > section {
     display: flex;
     gap: 8rem;
     max-height: 96px;
+    @media (max-width: 768px) {
+      overflow-x: hidden;
+    }
     ${({ bgContainer }) =>
       bgContainer.length > 0 &&
       css`

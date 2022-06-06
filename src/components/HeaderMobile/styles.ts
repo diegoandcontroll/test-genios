@@ -5,8 +5,8 @@ interface ContainerProps {
 }
 export const Container = styled.div<ContainerProps>`
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 270px;
+  height: 100vh;
   top: 0;
   bottom: 0;
   left: 0;
@@ -15,13 +15,9 @@ export const Container = styled.div<ContainerProps>`
   display: flex;
   align-items: center;
   justify-content: center;
-  backdrop-filter: blur(4px);
-  background: rgb(29, 37, 39, 0.95);
-  background: linear-gradient(
-    34deg,
-    rgba(235, 239, 242, 0.3) 0%,
-    rgba(29, 37, 39, 0.5) 95%
-  );
+  background: #ffffff;
+  box-shadow: 3px 0px 9px rgba(0, 0, 0, 0.15);
+  border-radius: 0px 24px 24px 0px;
   opacity: 0;
   pointer-events: none;
   ${({ isVisible }) =>
@@ -45,6 +41,21 @@ export const Container = styled.div<ContainerProps>`
     a {
       font-size: 20px;
       color: var(--primary);
+      &:before {
+        content: '';
+        border-radius: 50px;
+        bottom: 0px;
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background: var(--white);
+        transition: 0.3s;
+      }
+      &:hover {
+        &:before {
+          width: 100%;
+        }
+      }
     }
   }
 `;

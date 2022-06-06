@@ -6,7 +6,10 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
+  @media (max-width: 768px) {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
   h2 {
     font-weight: 400;
     font-size: 56px;
